@@ -1,0 +1,1 @@
+My portfolio highlights my technical skills, projects, hobbies, About Me section, contact information, and resume.

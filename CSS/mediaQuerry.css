@@ -1,0 +1,66 @@
+
+@media screen and (max-width:617px){
+    
+    #simg1{
+        width: 180px;
+    }
+    #mainbtn{
+        display:flex;
+        justify-content: space-around;
+    }
+    #home{
+        padding:0px 10px 0px 10px ;
+        
+    }
+   
+    ul{
+        flex-direction: column;
+        display: none;
+    }
+    #btncontact{
+        display: none;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        
+    }
+    #ham{
+        display: block;
+    }
+    #country{
+        display: none;
+    }
+    .About p{
+        padding: 10px;
+        line-height: 25px;
+    }.Hobbies img{
+        width: 250px;
+        justify-content: center;
+    }
+    .showmenu{
+        font-size: small;
+    }
+    .showmenu li a:hover{
+        background-color: black;
+        font-size: large;
+    }
+    .subSkills{
+        padding: 50px;
+    }
+    .subEducation{
+        padding: 50px; 
+    }
+    nav {
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:617px){
+    #simg2{
+        width: 400px;
+    }
+    .mbutton1{
+        display: none;
+    }
+}
+

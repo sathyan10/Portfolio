@@ -1,0 +1,302 @@
+*{
+    padding: 0%;
+    margin:0%;
+    text-decoration: none;
+    box-sizing: none;
+    list-style: none;  
+    color: white; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Index Page Css*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    background-color: rgb(3, 3, 13);
+    top: 0; 
+    left: 0;
+    padding: 30px;
+}
+
+a:hover{
+    color: rgb(88, 247, 244);
+    font-size: larger;
+}
+
+a:active{
+    color:rgb(3, 248, 113);
+}
+
+ul{
+    padding: 5px;
+    display:flex ;
+}
+ul li{
+    padding: 5px; 
+}
+.hamline{
+    height: 3px;
+    width: 20px;
+    margin-bottom: 3px;
+    background-color: white;
+}
+#ham{
+    cursor: pointer;
+    display: none;
+}
+.showmenu{
+    display: block;
+    background-color: rgb(146, 149, 154);
+}
+.contact1{
+    display: flex;
+}
+#btncontact{
+    border-radius: 25px;
+    padding: 8px;
+    border-color:darkred;
+    background-color: rgb(243, 170, 1);
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:50px 110px;
+    flex-basis: 5px;
+    background-image:url('page1bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#subhome{
+    background-color: rgb(18, 5, 49);
+    width: fit-content;
+    padding: 10px;
+    box-shadow:0px 0px 30px rgb(243, 170, 1);
+}
+#subhome h1{
+ word-spacing: 5px;
+}
+#mainbtn{
+    padding-top: 30px ;
+    display: flex;
+}
+#mainbtn button{
+    border-radius: 25px;
+    padding: 10px 16px 10px 16px;
+    border-color:rgb(138, 8, 8);
+    background-color: rgb(243, 170, 1);
+    margin:0px 5px 5px 5px;
+
+}
+#proj{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+.mbutton1{
+    border-radius: 25px;
+    background-color: rgb(36, 87, 138);
+    padding: 3px 16px 3px 16px;
+}
+#home footer{
+    display: flex;
+    margin-top: 80px;
+    font-size: large;
+    justify-content: space-around;
+}
+
+
+/*About Page css*/
+
+.About{
+   background-color: rgb(10, 1, 42);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:100px 0px;
+    flex-basis: 5px;
+}
+.About img{
+    padding-top: 50px;
+}
+
+.About p{
+    margin: 20px 100px 15px 100px;
+    line-height: 25px;
+}
+
+/*Education css*/
+
+.Education{
+    background-image:url('EducationPage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Education header{
+    text-align: center;
+    padding-top: 100px;
+}
+.subEducation{
+    display: flex;
+    justify-content: space-around;
+    padding:100px 0px;
+    align-items: center;
+    line-height: 50px;
+    flex-wrap: wrap;
+}
+#graduate {
+    border-left: 2px solid red;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    
+}
+#HSC {
+    border-left: 2px solid red;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+#sslc {
+    border-left: 2px solid red;
+    padding-left: 10px;
+    background-color: black;
+}
+.subEducation h3{
+    color: rgb(88, 247, 244);
+}
+.Skills{
+    background-image: url('skillspage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subSkills{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    flex-wrap: wrap;
+    
+}
+.Skills header{
+    text-align: center;  
+    padding: 40px 0px;
+}
+.subSkills h3{
+    color: aqua;
+}
+.Skills{
+    padding: 70px 0px;
+}
+
+
+/*Project css*/
+
+.Project{
+    background-image:url('projectpage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    align-items: center;  
+}
+.subProject{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 10px;
+    padding: 20px 0px 0px 0px;
+    font-family: monospace;
+    font-size: 14px;
+}
+.Project h1{
+    text-align: center;
+    padding-top: 50px;
+}
+#project1{
+    width: 200px;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: rgb(3, 3, 35);
+    margin-bottom: 20px;
+}
+#project1 h3{
+    text-align: center;
+    padding: 10px;
+    color: aqua;
+    
+}
+#project1 p{
+    text-align: justify;
+}
+#project1 h4{
+    text-align: center;
+    
+}
+#project2{
+    width: 200px;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: rgb(3, 3, 35);
+}
+#project2 h3{
+    text-align: center;
+    padding: 10px;
+    color: aqua;
+    
+}
+#project2 p{
+    text-align: justify;
+}
+#project2 h4{
+    text-align: center;  
+}
+#Project header{
+    padding: 60px 0px;
+}
+
+/*Hobbies Css*/
+
+.Hobbies{
+    background-image: url('Hobbiespage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.Hobbies h1{
+    text-align: center;
+    padding:100px 0px ;
+}
+.Hobbies1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Hobbies img{
+    width:600px;
+    height:auto;
+    margin-bottom: 50px;
+    box-shadow:0px 0px 30px rgb(42, 240, 251);
+}
+
+/*Contact CSS*/
+
+.Contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(12, 7, 31);
+    padding:50px 110px;
+}
+.Contact a{
+   padding:100px 0px 50px 0px;
+}
+/*Footer css*/
+#foot{
+    padding:20px;
+    justify-content: flex-start;
+    background-color: rgb(12, 7, 31);
+}
