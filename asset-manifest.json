@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sathyan_portfolio/static/css/main.c3c18d24.css",
+    "main.js": "/sathyan_portfolio/static/js/main.6d8bc437.js",
+    "static/media/Recipe.png": "/sathyan_portfolio/static/media/Recipe.76fa4be47b98618ca174.png",
+    "static/media/resume.jpg": "/sathyan_portfolio/static/media/resume.b5c3622d8719fe3e94ab.jpg",
+    "static/media/PORTFOLIO.png": "/sathyan_portfolio/static/media/PORTFOLIO.00abf1c47b1638117ff4.png",
+    "static/media/CRUD.png": "/sathyan_portfolio/static/media/CRUD.02aba8cbc13f789cf6da.png",
+    "static/media/Profile.webp": "/sathyan_portfolio/static/media/Profile.b54117020529fdf86004.webp",
+    "static/media/avatar.svg": "/sathyan_portfolio/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
+    "index.html": "/sathyan_portfolio/index.html",
+    "main.c3c18d24.css.map": "/sathyan_portfolio/static/css/main.c3c18d24.css.map",
+    "main.6d8bc437.js.map": "/sathyan_portfolio/static/js/main.6d8bc437.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3c18d24.css",
+    "static/js/main.6d8bc437.js"
+  ]
+}
