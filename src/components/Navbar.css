@@ -1,0 +1,147 @@
+/* Navbar.css */
+
+.navbar {
+  /* Slightly darker background for better visibility */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  /* Optional: Add subtle shadow */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  /* Constrain maximum width */
+  margin: 0 auto;
+  /* Center align */
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:white;
+  background-color:orange;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-link svg {
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  color: #b682ff;
+}
+
+/* GitHub icon for normal view */
+.github-icon {
+  margin-left: auto;
+}
+
+/* Toggle Button */
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-button {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.fa-times {
+  font-size: 1.5rem;
+  color: #fff;
+  display: none;
+}
+
+.toggle-checkbox:checked+.toggle-button .fa-bars {
+  display: none;
+}
+
+.toggle-checkbox:checked+.toggle-button .fa-times {
+  display: block;
+}
+
+/* When the checkbox is checked, display the GitHub icon near the toggle button */
+.toggle-checkbox:checked~.nav-menu .github-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* Adjusted to prevent overlap */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    /* Adjusted to ensure menu is below the navbar */
+    left: 0;
+    background-color: #111;
+    z-index: 999;
+    padding: 10px 0px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .toggle-button {
+    display: block;
+    z-index: 1001;
+  }
+
+  .toggle-checkbox:checked~.nav-menu {
+    display: flex;
+  }
+
+  .github-icon {
+    margin: 0;
+    order: -1;
+  }
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

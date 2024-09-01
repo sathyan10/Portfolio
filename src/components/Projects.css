@@ -1,0 +1,215 @@
+/* General Styles */
+.projects {
+    padding: 20px;
+    text-align: center;
+    background-color: #1d1c1f; /* Dark background color */
+    color: #fff;
+}
+
+.projects h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Project Cards Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between cards */
+}
+
+/* Project Card */
+.project-card {
+    background-color: #2c2c2c; /* Lightened background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Controls max width for large screens */
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: fadeInUp 0.6s ease-out both;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and scale on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: #3a3a3a; /* Darker background on hover */
+}
+
+.project-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.project-card:hover:before {
+    opacity: 1;
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Project Info */
+.project-info {
+    padding: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.project-info h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.project-info p {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+/* Stack */
+.stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-icon:hover {
+    background-color: #777;
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.tech-icon svg {
+    margin-right: 5px;
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+/* Buttons */
+.buttons .btn {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    padding: 10px 20px;
+    background-color: #0010f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+.buttons .btn:hover {
+    background-color: #0008c4;
+    transform: translateY(-2px); /* Subtle lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+/* Large Screens (Desktops) */
+@media (min-width: 1200px) {
+    .project-card {
+        width: 30%; /* Three cards per row */
+    }
+}
+
+/* Medium Screens (Laptops/Tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .project-card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+/* Small Screens (Tablets) */
+@media (max-width: 767px) {
+    .project-card {
+        width: 100%; /* One card per row */
+    }
+
+    .projects h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Extra Small Screens (Mobile Devices) */
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .projects h2 {
+        font-size: 1.2em;
+    }
+
+    .project-info h3 {
+        font-size: 1.3em;
+    }
+}

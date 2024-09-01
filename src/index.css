@@ -1,0 +1,15 @@
+/* Import attractive Google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* Skill Set Container */
+*{
+  font-family: 'Nunito', sans-serif; /* Apply the imported font */
+}
+body {
+  margin: 0;
+  background: #0d0d0d;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}

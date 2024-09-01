@@ -1,0 +1,63 @@
+#contact-footer {
+    width: 100%;
+    /* Take full width of the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    /* Matches the overall dark theme */
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    /* Matches the container's border radius */
+    box-sizing: border-box;
+}
+
+#flogo {
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border-radius: 15%;
+}
+
+#footer-left,
+#footer-right {
+    display: flex;
+    align-items: center;
+}
+
+#footer-left p,
+#footer-right p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+#footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+#footer-icons a {
+    color: #fff;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+#footer-icons a:hover {
+    color: #ffcc00;
+    /* Change color on hover */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    #contact-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #footer-left,
+    #footer-right {
+        margin-bottom: 10px;
+    }
+}

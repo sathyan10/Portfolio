@@ -1,0 +1,172 @@
+/* Main Container */
+#contact-container {
+    width: 100%; /* Full width of the viewport */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    background: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading */
+#contact-heading {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact Content Layout */
+#contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure no overflow from padding */
+}
+
+/* Contact Info Section */
+#contact-info {
+    flex: 1;
+    min-width: 300px; /* Adjusted minimum width */
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s 0.5s forwards;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    color: #fff;
+}
+
+/* Contact Form Section */
+#contact-form {
+    flex: 1;
+    min-width: 300px; /* Adjusted minimum width */
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s 0.5s forwards;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    margin-right: 15px; /* Space between icon and text */
+}
+
+/* Form Elements */
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #555;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.contact-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-button {
+    background: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background: #e84354;
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Status Message */
+#contact-status {
+    margin-top: 10px;
+    color: #ffcc00;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+/* Adjust for tablet and smaller screens */
+@media (max-width: 768px) {
+    #contact-container {
+        padding: 20px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #contact-info,
+    #contact-form {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contact-heading {
+        font-size: 24px;
+    }
+}
+
+/* Ensure no horizontal overflow */
+html, body {
+    overflow-x: hidden;
+}
